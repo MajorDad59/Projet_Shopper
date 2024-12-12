@@ -23,7 +23,7 @@ app.use("/users", userRoutes);
 app.use("/auth", authRoutes);
 
 // Route d'accueil pour vérifier que l'API fonctionne
-app.get("/", (req, res) => res.send("Express App is running"));
+app.get("/", (_req, res) => res.send("Express App is running"));
 
 // Démarrage du serveur
 app.listen(port, (error) => {
